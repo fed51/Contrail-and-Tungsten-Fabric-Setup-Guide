@@ -6,7 +6,7 @@
 
 Please refer to canonical documentation from Kubernetes community  [here](https://kubernetes.io/docs/setup/)
 
-# Installing Kuberntes on Ubuntu-16.04 hosts
+# Installing Kuberntes on Ubuntu hosts
 
 ## Installing Kubernetes on Master node
 
