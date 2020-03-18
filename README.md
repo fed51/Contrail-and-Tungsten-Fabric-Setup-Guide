@@ -364,9 +364,9 @@ K8S_MASTER_IP=x.x.x.x; \
     sed -i "s/{{ K8S_MASTER_IP }}/$K8S_MASTER_IP/g; \
         s/{{ CONTRAIL_REPO }}/$CONTRAIL_REPO/g; \
         s/{{ CONTRAIL_RELEASE }}/$CONTRAIL_RELEASE/g" \
-        /var/$FILE; \
-    kubectl apply -f /var/$FILE; \
-    rm /var/${FILE%.*}*
+        /tmp/$FILE; \
+    kubectl apply -f /tmp/$FILE; \
+    rm /tmp/${FILE%.*}*
 ```
 
 ## Tungsten Fabric on CentOS
