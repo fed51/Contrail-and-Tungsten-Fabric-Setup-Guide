@@ -357,7 +357,7 @@ K8S_MASTER_IP=x.x.x.x; \
     mkdir -pm 777 /var/lib/contrail/kafka-logs; \
     TMPLT="https://raw.githubusercontent.com/fed51/contrail-kubernetes-docs/master/install/kubernetes/templates/contrail-single-step-cni-install-ubuntu.yaml"; \
     PATCH="https://raw.githubusercontent.com/fed51/contrail-kubernetes-docs/master/install/kubernetes/templates/contrail-single-step-cni-install-ubuntu.patch"; \
-    FILE=$(basename -- "$URL"); \
+    FILE=$(basename -- "$TMPLT"); \
     curl $TMPLT -o /tmp/${TMPLT##*/}; \
     curl $PATCH -o /tmp/${PATCH##*/}; \
     patch /tmp/$FILE /tmp/${PATCH##*/}; \
